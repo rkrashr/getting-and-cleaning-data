@@ -48,5 +48,5 @@ names(ds) <- nice_names
 #create an independent tidy data set with 
 #the average of each variable for each activity and each subject
 means <- aggregate(x = ds[1:(length(nice_names)-2)],by = ds[c('subject','activity')],FUN=mean)
-
+write.table(means,file = 'tidy-dataset.txt',row.names = FALSE)
 
