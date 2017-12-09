@@ -1,8 +1,10 @@
-#Codebook
+Codebook
+=========
 
 This document describes the code and data related to the project
 
-##Code structure
+Code structure
+--------------
 
 The code is organized in a flat procedural manner. Execution is sequential, non-cyclic, non-recursive.
 
@@ -26,15 +28,18 @@ The algorithm is as follows:
 16. apply new pretty column names
 17. create an independent tidy data set with the average of each variable for each activity and each subject
 
-###Original dataset features
+Original dataset features
+-------------------------
  1. activity index
  2. subject 
 3 - 564. numeric data (see original dataset for details)
 
-###Tidy dataset
+Tidy dataset
+------------
 1. activity label
 2. subject
 3 - 69. mean and standard deviation values (see original dataset for details)
 
-###Resultant dataset 
+Resultant dataset 
+-----------------
 Cross-tabulated dataset grouped by activity and subject, other columns are averaged.
